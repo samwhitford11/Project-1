@@ -1,0 +1,28 @@
+main > img {
+    width: 50px;
+    height: 50px;
+    display:block;
+    margin: auto;
+    object-fit:fill;
+}
+
+*{
+    background-color: aliceblue;
+}
+
+main > form {
+    text-align: center;
+    padding: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    transition: background-color .3s, color .3s;
+}
+
+main > form:hover {
+    background-color: azure;
+    color: black;
+    cursor: pointer;
+}

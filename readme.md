@@ -1,6 +1,6 @@
-# The Name of my App
+# Event Hooks
 
-a description of my project
+Search for events whether it be a game or concert using the team's or aritist's name.
 
 ### Technologies Used
 
@@ -10,19 +10,22 @@ a description of my project
 - README.md
 - Google Fonts
 - Javascript
-- ...API used
+- seatgeek Api 
 
-### Screenshots
-![Some text describing the pic](pic url) imgur.com 
+### Wireframe
+
+[Desktop view of the app](https://imgur.com/a/nExC8Yz) 
+[Mobile view of the app](https://imgur.com/a/pIQqHxL)
+both desktop view and mobile
 
 ### Daily Plan
 
-| Day | Goal |
-|-----|------|
-| 1 | Chose API |
+| Day | Goal | Status |
+|-----|------|--------|
+| 1 | Chose API | Done |
 | 2 | Render data to screen |
 | 3 | Create form |
 
 ### Link tp Project
 [My Project Live Page]
-(https://www.google.com)
+(https://project-one-whitford.vercel.app/)
