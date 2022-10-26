@@ -11,17 +11,33 @@ function eventSearch(performer){
 
     //make your request
     $.ajax(url)
-    .then((event) => {
+    .then((events) => {
+        console.log(events)
+
+        const list = events.events
+        console.log(list)
+        //render the data
+
+       list.forEach((event) =>{
         console.log(event)
 
-        
-        //render the data
-        const $main = $("main")
-        $main.empty()
-
-        $main.html(`
-       
+        const div = $("<div>")
+        const artistName = event.title
+        const location = event.venue.display_location
+        div.html(`
+        <h1>${artistName}</h1>
+        <h2>${location}</h2>
         `)
+        const footer = $("footer")
+        footer.append(div)
+
+
+
+
+
+       })
+       
+
 
         
     })
@@ -37,9 +53,9 @@ $("input[type=submit]").on("click", (event) => {
     const inputText = $("input[type=text]").val()
 
     //update the screen
-    weatherSearch(inputText)
+    eventSearch(inputText)
 })
-eventSearch("charlie-puth")
+// eventSearch("charlie-puth")
 
 
 // how to create a function that take the input 
