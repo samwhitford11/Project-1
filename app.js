@@ -22,17 +22,21 @@ function eventSearch(performer){
         console.log(event)
 
         const div = $("<div>")
-        const artistName = event.title
-        const location = event.venue.display_location
+        const artistName = event.title;
+        const location = event.venue.display_location;
+        const utcdate = event.datetime_utc;
+        const date = new Date(utcdate);
+        const ticketLink = event.url;
+
+
         div.html(`
         <h1>${artistName}</h1>
         <h2>${location}</h2>
+        <h2>${date}</h2>
+        <h3>${ticketLink}</h3>
         `)
         const footer = $("footer")
         footer.append(div)
-
-
-
 
 
        })
