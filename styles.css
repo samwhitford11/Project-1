@@ -13,6 +13,7 @@ main > h1{
     height: 50px;
     font-size: 400%;
     color: indianred;
+    text-shadow: 2px 2px darkslategrey;
 }
 
 main > form {
@@ -88,11 +89,6 @@ form > input[type=text]:focus {
   }
 
   main > div > h3{
-    /* background-color: teal;
-    border-radius: 3px;
-    padding: 8px 25px;
-    text-decoration: none;
-    margin: 4px 120px; */
     color:teal;
     font-size:200%;
     
