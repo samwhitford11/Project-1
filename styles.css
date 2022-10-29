@@ -10,7 +10,7 @@ body{
     text-align:center;
 }
 main > h1{
-    height: 100px;
+    height: 50px;
     font-size: 400%;
     color: indianred;
 }
@@ -53,12 +53,15 @@ form > input[type=text]:focus {
     align-items: center;
     margin: auto;
     text-decoration-color:white;
+    border-radius: 20px;
+    padding-top: 10px;
     
 
   }
 
   main > div > p{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
   }
 
   input[type=button], input[type=submit], input[type=reset] {
@@ -77,5 +80,24 @@ form > input[type=text]:focus {
     color:white;
 
   }
+
+  main > div> h2{
+    background-color: peru;
+    border: 10px;
+    padding: 10px;
+  }
+
+  main > div > h3{
+    /* background-color: teal;
+    border-radius: 3px;
+    padding: 8px 25px;
+    text-decoration: none;
+    margin: 4px 120px; */
+    color:teal;
+    font-size:200%;
+    
+  }
+  
+
  
 
