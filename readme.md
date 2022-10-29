@@ -23,8 +23,9 @@ both desktop view and mobile
 | Day | Goal | Status |
 |-----|------|--------|
 | 1 | Chose API | Done |
-| 2 | Render data to screen |
-| 3 | Create form |
+| 2 | Render data to screen | Done|
+| 3 | Create form |  Done  |
+| 4 | CSS Styling| Done|
 
 ### Link tp Project
 [My Project Live Page]

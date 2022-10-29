@@ -28,7 +28,7 @@ main > form {
     
 }
 
-main > form:hover {
+main > form[type=button], input[type=submit], input[type=reset] {
     background-color: azure;
     color: white;
     cursor: pointer;
@@ -48,10 +48,11 @@ form > input[type=text]:focus {
     width: 50%;
     text-align:center;
     background-color:peru;
-    opacity: 0.8;
+    opacity: 0.9;
     display:block;
     align-items: center;
     margin: auto;
+    text-decoration-color:white;
     
 
   }
@@ -59,3 +60,22 @@ form > input[type=text]:focus {
   main > div > p{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color:teal;
+    border: none;
+    color: white;
+    padding: 8px 25px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+
+  input:hover[type=button], input[type=submit], input[type=reset]{
+    background-color: indianred;
+    color:white;
+
+  }
+ 
+

@@ -20,8 +20,13 @@ function eventSearch(performer){
 
         const list = events.events
         console.log(list)
-        //render the data
 
+//empty result's footer div before adding new data
+        $("footer").empty()
+
+
+
+        //render the data
        list.forEach((event) =>{
         console.log(event)
 
@@ -49,7 +54,7 @@ function eventSearch(performer){
 
        })
        
-{/* <h3><a onclick="window.open('${ticketLink}')"><input type="button" value="Get Tickets”></a></h3> */}
+
 
         
     })
