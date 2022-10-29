@@ -6,8 +6,12 @@ const baseURL = 'https://api.seatgeek.com/2/events';
 
 //function that does performer search
 function eventSearch(performer){
+    const hyphen = performer.replace(/\s+/g, '-')
+    console.log(hyphen)
+
+    //replace any spaces with a hyphen
     //constructing url for request
-    const url = `${baseURL}?client_id=${clientId}&client_secret=${appsSecret}&performers.slug=${performer}`
+    const url = `${baseURL}?client_id=${clientId}&client_secret=${appsSecret}&performers.slug=${hyphen}`
 
     //make your request
     $.ajax(url)
@@ -33,15 +37,15 @@ function eventSearch(performer){
         <h1>${artistName}</h1>
         <h2>${location}</h2>
         <h2>${date}</h2>
-        <h3>${ticketLink}</h3>
+        <h3><input type="button" value='Get Tickets' onclick="window.open('${ticketLink}')"></h3>
         `)
-        const footer = $("footer")
+        const footer = $("footer")// clear footer before appending
         footer.append(div)
 
 
        })
        
-
+{/* <h3><a onclick="window.open('${ticketLink}')"><input type="button" value="Get Tickets”></a></h3> */}
 
         
     })
@@ -55,9 +59,10 @@ $("input[type=submit]").on("click", (event) => {
 
     //grab text from input box
     const inputText = $("input[type=text]").val()
+    console.log(inputText)
 
     //update the screen
-    eventSearch(inputText)
+    eventSearch(inputText)//clear out search bar
 })
 // eventSearch("charlie-puth")
 
