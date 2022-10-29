@@ -10,14 +10,16 @@
     crossorigin="anonymous"></script>
     <script src="app.js" defer> </script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
         <h1> Event Hooks </h1>
-         <img src="https://www.clipartmax.com/png/small/22-223028_free-clipart-of-a-fishing-hook-fish-hook-clip-art.png" alt="Fish Hook Logo"/>
        <div>
         <h2> Looking for your next night out?</h2>
-        <p> It's as easy as fishing </p>
+        <p> It's as easy as fishing...with half the patience </p>
         <h3> Cast Out</h3>
         <p>Search for your favorite team or artist </p>
         <h3> Reel In </h3>
@@ -25,8 +27,10 @@
        </div> 
     </main>
     <form>
-        <input type="text" placeholder="Name of artist or team">
-        <input type="submit" value="Search">
+        <input type="text" id="searchbar" name="searchbar" value="Name of artist or team" onclick="searchbarClicked()"> 
+      <input type="submit" value="Search" name="search">
+        <!-- <input type="text" onfocus="this.value=''" value="Name of artist or team">
+        <input type="submit" value="Search"> -->
     </form>
     <footer>
 

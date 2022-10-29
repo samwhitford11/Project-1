@@ -8,7 +8,7 @@ const baseURL = 'https://api.seatgeek.com/2/events';
 function eventSearch(performer){
     const hyphen = performer.replace(/\s+/g, '-')
     console.log(hyphen)
-
+    
     //replace any spaces with a hyphen
     //constructing url for request
     const url = `${baseURL}?client_id=${clientId}&client_secret=${appsSecret}&performers.slug=${hyphen}`
@@ -39,8 +39,12 @@ function eventSearch(performer){
         <h2>${date}</h2>
         <h3><input type="button" value='Get Tickets' onclick="window.open('${ticketLink}')"></h3>
         `)
-        const footer = $("footer")// clear footer before appending
+        const footer = $("footer")
+        // clear footer before appending
+
         footer.append(div)
+        
+        
 
 
        })
@@ -53,6 +57,9 @@ function eventSearch(performer){
         console.log(error)
     })
 }
+function searchbarClicked() {
+    document.getElementById('searchbar').value = '';
+    }
 $("input[type=submit]").on("click", (event) => {
     //prevent for refresh
     event.preventDefault()
@@ -62,18 +69,12 @@ $("input[type=submit]").on("click", (event) => {
     console.log(inputText)
 
     //update the screen
-    eventSearch(inputText)//clear out search bar
+    eventSearch(inputText)
 })
-// eventSearch("charlie-puth")
+// {/* // eventSearch("charlie-puth") */}
 
 
-// how to create a function that take the input 
-// arrow callback function for on submit event targeting the form element
-// select the form element and store in a variable 
-// chain a .on() jquery event
-// select the form input element 
-// store the form input value in a variable 
-// invoke our eventSearch() function passing the form input value as an argument
+
 
 
 

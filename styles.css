@@ -1,13 +1,18 @@
-main > img {
-    width: 50px;
-    height: 50px;
-    display:block;
-    margin: auto;
-    object-fit:fill;
-}
 
-*{
-    background-color: aliceblue;
+
+body{
+    background-image: url("https://images.template.net/96115/ocean-beach-background-12jct.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color:white;
+    font-family: 'Bebas Neue', cursive;
+    text-align:center;
+}
+main > h1{
+    height: 100px;
+    font-size: 400%;
+    color: indianred;
 }
 
 main > form {
@@ -19,10 +24,38 @@ main > form {
     border-radius: 10px;
     margin: 10px;
     transition: background-color .3s, color .3s;
+    width: 20%;
+    
 }
 
 main > form:hover {
     background-color: azure;
-    color: black;
+    color: white;
     cursor: pointer;
 }
+main > form{
+    text-align:justify;
+   
+}
+
+form > input[type=text]:focus {
+    border: 3px solid #555;
+    background-color: white;
+    
+  }
+
+  footer{
+    width: 50%;
+    text-align:center;
+    background-color:peru;
+    opacity: 0.8;
+    display:block;
+    align-items: center;
+    margin: auto;
+    
+
+  }
+
+  main > div > p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
